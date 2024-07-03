@@ -18,3 +18,13 @@ func CalculateWorkingCarsPerMinute(productionRate int, successRate float64) {
 	}
 	panic("CalculateWorkingCarsPerMinute not implemented")
 }
+
+func CalculateCost(carsCount int) uint {
+	if carsCount > 0 {
+		groups := carsCount / 10
+		individuals := carsCount % 10
+		price := (groups * 95000) + (individuals * 10000)
+		fmt.Println(uint(price))
+	}
+	panic("CalculateCost not implemented")
+}
